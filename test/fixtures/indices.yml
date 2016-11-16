@@ -1,0 +1,8 @@
+index_1:
+  url: http://example.com/
+  tags:
+    h1: ['Main page title']
+    h2: ['Second page title']
+    h3: ['Third page title']
+    a: ['http://example.com/']
+
