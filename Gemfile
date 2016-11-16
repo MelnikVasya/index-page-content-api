@@ -8,6 +8,7 @@ gem 'pg'
 gem 'puma', '~> 3.0'
 
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'dry-validation'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -22,6 +23,7 @@ gem 'rack-cors'
 
 group :development, :test do
   gem 'pry'
+  gem 'webmock'
 end
 
 group :development do

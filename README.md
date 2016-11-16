@@ -1,24 +1,38 @@
-# README
+# Setting up dev environment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Initial setup
 
-Things you may want to cover:
+1. Git clone the repository with SSH
 
-* Ruby version
+    git clone git@github.com:petadam/index-page-content-api.git
 
-* System dependencies
+2. Ensure you RVM and the ruby version mentioned .ruby-version file installed
 
-* Configuration
+3. Run `bundle install`
 
-* Database creation
+4. Ensure you have Postgresql V9.5 and above installed
 
-* Database initialization
+5. Run `rake db:setup`
 
-* How to run the test suite
+5. Run a db migrate in case there are additional migrations not reflected
 
-* Services (job queues, cache servers, search engines, etc.)
+        rake db:migrate
 
-* Deployment instructions
+9. Prepare for tests
 
-* ...
+        rake db:test:prepare
+
+10. Run test
+
+        rake test
+
+## Usages
+
+1. Get list of indices
+
+        & curl http://localhost:3000/api/v1/indices
+
+2. Create new index
+
+        $ curl --data-urlencode 'url=http://example.com/' http://localhost:3000/api/v1/indices
+
