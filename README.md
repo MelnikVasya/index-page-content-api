@@ -4,7 +4,7 @@
 
 1. Git clone the repository with SSH
 
-    git clone git@github.com:petadam/index-page-content-api.git
+        $ git clone git@github.com:petadam/index-page-content-api.git
 
 2. Ensure you RVM and the ruby version mentioned .ruby-version file installed
 
@@ -22,7 +22,7 @@
 
         rake db:test:prepare
 
-10. Run test
+10. Run tests
 
         rake test
 
