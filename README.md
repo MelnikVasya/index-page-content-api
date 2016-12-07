@@ -36,3 +36,4 @@
 
         $ curl --data-urlencode 'url=http://example.com/' http://localhost:3000/api/v1/indices
 
+.
