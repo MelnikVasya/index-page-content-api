@@ -36,4 +36,6 @@
 
         $ curl --data-urlencode 'url=http://example.com/' http://localhost:3000/api/v1/indices
 
-.
+## Contributing
+
+Open tickets or send pull requests with improvements. Please write good commit messages or your pull requests will be closed.
